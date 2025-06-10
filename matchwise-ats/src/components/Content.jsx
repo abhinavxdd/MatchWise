@@ -87,8 +87,8 @@ const Content = () => {
 
   const FileInput = () => (
     <div className="mb-4">
-      <label className="block mb-2 font-semibold text-black">
-        Upload your Resume
+      <label className="block mb-2 font-semibold text-white">
+        Upload your Resume 📄
       </label>
       <input
         type="file"
@@ -96,8 +96,9 @@ const Content = () => {
         onChange={handleFileChange}
         className="file-input file-input-bordered w-full"
         disabled={loading}
+        style={{ backgroundColor: '#2d2d2d' }}
       />
-      <div className="mt-2 text-sm text-gray-600">
+      <div className="mt-2 text-sm text-gray-300">
         {selectedFile ? `Selected: ${selectedFile.name}` : "No file chosen"}
       </div>
     </div>
@@ -105,12 +106,13 @@ const Content = () => {
 
   const RoleSelect = () => (
     <div className="mb-4">
-      <label className="block mb-2 font-semibold text-black">Select Role</label>
+      <label className="block mb-2 font-semibold text-white">Select Role 🔍</label>
       <select
         value={role}
         onChange={handleRoleChange}
-        className="select select-bordered w-full"
+        className="select select-bordered w-full "
         disabled={loading}
+        style={{ backgroundColor: '#2d2d2d' }}
       >
         <option value="">-- Choose a role --</option>
         <option value="Software Developer">Software Developer</option>
@@ -148,8 +150,11 @@ const Content = () => {
   );
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center text-black">
+    <div
+      className="max-w-xl mx-auto mt-10 p-6 rounded-lg shadow-md"
+      style={{ backgroundColor: '#2d2d2d' }}
+    >
+      <h2 className="text-2xl font-bold mb-4 text-center text-white">
         Upload Resume & Analyze
       </h2>
 
@@ -160,7 +165,7 @@ const Content = () => {
       <AnalyzeButton />
 
       {loading && (
-        <p className="text-center text-black mt-4">Processing your resume...</p>
+        <p className="text-center text-white mt-4">Processing your resume...</p>
       )}
 
       {result && !loading && <ResultDisplay />}

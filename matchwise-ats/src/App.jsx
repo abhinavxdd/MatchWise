@@ -1,16 +1,13 @@
 import React from 'react'
 import Navbar from './components/Navbar';
-import Content from './components/content';
+import Content from './components/Content';
 
 const App = () => {
   return (
-    <div className='bg-black min-h-screen'>
+    <div className='min-h-screen' style={{ backgroundColor: '#1c1c1c' }}>
+      <Navbar />
       <div>
-        <Navbar />
-        <div className=''>
-          <Content />
-        </div>
-        
+        <Content />
       </div>
     </div>
   )
