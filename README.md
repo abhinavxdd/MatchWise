@@ -1,1 +1,1 @@
-
+# ATS-Friendly Resume Analyzer
