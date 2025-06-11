@@ -39,3 +39,43 @@ This is a web-based **resume analysis tool** that leverages AI for content evalu
 <strong>Results</strong><br><br>
 <img src="./images/result.png"/>
 </p>
+
+## Installation and Setup Guide
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/MatchWise.git
+cd MatchWise
+```
+### 2. Backend Setup
+```bash
+cd backend
+npm install
+```
+Create a `.env` file in the `backend\` folder:
+```bash
+GEMINI_API_KEY=your_gemini_api_key
+PORT=5000
+```
+Start the backend server:
+```bash
+node server.js
+```
+or (if you use nodemon)
+```bash
+nodemon server.js
+```
+### 3. Frontend Setup
+```bash
+cd ../matchwise-ats
+npm install
+```
+Start the frontend development server:
+```bash
+npm run dev
+```
+### 4. Usage
+- Open your browser and go to [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+- Upload your resume, select a role, and click "Analyze" to get instant feedback.
+### 5. Key Considerations
+- Make sure your backend (`localhost:5000` by default) is running before using the frontend.
+- **Never commit your `.env` file or API keys to public repositories.**
