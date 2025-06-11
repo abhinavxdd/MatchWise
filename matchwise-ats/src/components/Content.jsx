@@ -47,7 +47,7 @@ const Content = () => {
       formData.append('resume', selectedFile);
       formData.append('role', role);
 
-      const response = await fetch('http://localhost:5000/analyze', {
+      const response = await fetch('https://matchwise.onrender.com', {
         method: 'POST',
         body: formData,
       });
