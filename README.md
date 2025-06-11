@@ -79,3 +79,10 @@ npm run dev
 ### 5. Key Considerations
 - Make sure your backend (`localhost:5000` by default) is running before using the frontend.
 - **Never commit your `.env` file or API keys to public repositories.**
+## Contributing
+Contributions are welcome! If you have suggestions for improvements, bug fixes, or new features, please open an issue or submit a pull request.  
+Before contributing, please make sure your code follows the project’s coding standards and is well-documented.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Contact
+For questions, feedback, or collaboration opportunities, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/abh1navvv/) or open an issue on this GitHub repository.
